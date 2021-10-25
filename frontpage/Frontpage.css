@@ -1,15 +1,13 @@
-
-
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-html{
+html {
   min-height: 100%;
   overflow: hidden;
 }
 
-body{
+body {
   margin: 0px;
   height: 100%;
   padding: 0;
@@ -17,126 +15,146 @@ body{
   overflow: hidden;
 }
 
-#index{
+#index {
   height: 100%;
   background-color: black;
   perspective: 100000px;
   display: flex;
 }
 
-#index .loaded .martix{
+#index .loaded .martix {
   height: 100vh;
 }
 
-#index.loaded{
+#index.loaded {
   animation: perspenctive 30s 5s alternate infinite;
 }
 
-.martix{
-height: 0;
-position: relative;
-top: 0;
-opacity: 0.8;
-padding: 0 5px;
-color: green;
-text-shadow: 0 1px 2px rgba(10,255,10,0.8);
-letter-spacing: 2px;
-transition: all 5s;
-border-radius: 0 5px 5px 0;
-flex: 1 0 auto;
-white-space: nowrap;
-writing-mode: vertical-lr;
-overflow: hidden;
+.martix {
+  height: 0;
+  position: relative;
+  top: 0;
+  opacity: 0.8;
+  padding: 0 5px;
+  color: green;
+  text-shadow: 0 1px 2px rgba(10, 255, 10, 0.8);
+  letter-spacing: 2px;
+  transition: all 5s;
+  border-radius: 0 5px 5px 0;
+  flex: 1 0 auto;
+  white-space: nowrap;
+  writing-mode: vertical-lr;
+  overflow: hidden;
 }
 
 @keyframes perspenctive {
-  50%{
-    perspective: 1px;;
+  50% {
+    perspective: 1px;
   }
-  
 }
 
-.center{
+.center {
   height: calc(100vh - 8em);
   padding: 4em;
   color: white;
-  font-family: 'VT323', monospace;
-  background-color: rgb(25,25,25);  
-
+  font-family: "VT323", monospace;
+  background-color: rgb(25, 25, 25);
 }
 
-.line-1{
-    position: relative;
-    top: 40%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
+.line-1 {
+  position: relative;
+  top: 40%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
 }
 
-a{
+a {
   color: white;
 }
 /* Animation */
-.anim-typewriter{
-  animation: typewriter 2.5s steps(32,end) 1s 1 normal both,
-             blinkTextCursor 800ms steps(32) 5 normal;
-             border-right: 1px solid transparent;
-             
+.anim-typewriter {
+  animation: typewriter 2.5s steps(32, end) 1s 1 normal both,
+    blinkTextCursor 800ms steps(32) 5 normal;
+  border-right: 2px solid transparent;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 8em;}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8em;
+  }
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
-.anim-typewriter2{
-  animation: typewriter2 2.5s steps(44,end) 1s 1 normal both,
-             blinkTextCursor2 800ms steps(44) 4 normal;
-             border-right: 1px solid transparent;
+.anim-typewriter2 {
+  animation: typewriter2 2.5s steps(44, end) 1s 1 normal both,
+    blinkTextCursor2 800ms steps(44) 4 normal;
+  border-right: 2px solid transparent;
   animation-delay: 4s;
 }
-@keyframes typewriter2{
-  from{width: 0;}
-  to{width: 9em;}
+@keyframes typewriter2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9em;
+  }
 }
-@keyframes blinkTextCursor2{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes blinkTextCursor2 {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
-.anim-typewriter3{
-  animation: typewriter3 2.5s steps(44,end) 1s 1 normal both,
-             blinkTextCursor3 800ms steps(44) 5  normal;
-             border-right: 1px solid transparent;
+.anim-typewriter3 {
+  animation: typewriter3 2.5s steps(44, end) 1s 1 normal both,
+    blinkTextCursor3 800ms steps(44) infinite normal;
+  border-right: 2px solid transparent;
   animation-delay: 7.5s;
 }
-@keyframes typewriter3{
-  from{width: 0;}
-  to{width: 8em;}
+@keyframes typewriter3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8em;
+  }
 }
-@keyframes blinkTextCursor3{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes blinkTextCursor3 {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
-
 
 body {
-margin: 0;
+  margin: 0;
 }
 
 canvas {
-display: block;
-position:absolute;
-top:0;
-left:0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
