@@ -1,6 +1,5 @@
 body {
   background-color: black;
-  color: green;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -52,4 +51,56 @@ body {
   background-image: url("../Mainpage/image/background.jpg");
   height: 100vh;
   width: calc(100vw - 160px);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile {
+  width: 700px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px 0;
+  border-radius: 50px;
+  height: 500px;
+}
+
+.profile h1 {
+  color: white;
+  font-weight: bolder;
+}
+
+.profile .info {
+  margin-top: 25px;
+  height: 350px;
+}
+
+.profile .info ul {
+  color: white;
+  float: left;
+  justify-content: space-between;
+  list-style-type: none;
+  text-align: left;
+  width: 55%;
+}
+
+li {
+  padding: 10px 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 10px;
+  width: 370px;
+}
+
+.profile .info li a {
+  color: white;
+}
+
+aside {
+  width: 250px;
+  height: 300px;
+  margin: 15px;
+  float: right;
+  border: white 1px solid;
 }
