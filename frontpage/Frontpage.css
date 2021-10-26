@@ -104,7 +104,7 @@ a {
 
 .anim-typewriter2 {
   animation: typewriter2 2.5s steps(44, end) 1s 1 normal both,
-    blinkTextCursor2 800ms steps(44) 6 normal;
+    blinkTextCursor2 800ms steps(44) 5 normal;
   border-right: 2px solid transparent;
   animation-delay: 5.7s;
 }
@@ -126,10 +126,10 @@ a {
 }
 
 .anim-typewriter3 {
-  animation: typewriter3 2.5s steps(44, end) 1s 1 normal both,
+  animation: typewriter3 2s steps(44, end) 1s 1 normal both,
     blinkTextCursor3 800ms steps(44) infinite normal;
   border-right: 2px solid transparent;
-  animation-delay: 10.6s;
+  animation-delay: 10s;
 }
 @keyframes typewriter3 {
   from {
