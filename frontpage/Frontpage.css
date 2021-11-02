@@ -81,8 +81,8 @@ a {
 }
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 2.5s steps(32, end) 1s 1 normal both,
-    blinkTextCursor 800ms steps(32) 7 normal;
+  animation: typewriter 2s steps(32, end) 1s 1 normal both,
+    blinkTextCursor 600ms steps(32) 6 normal;
   border-right: 2px solid transparent;
 }
 @keyframes typewriter {
@@ -103,10 +103,10 @@ a {
 }
 
 .anim-typewriter2 {
-  animation: typewriter2 2.5s steps(44, end) 1s 1 normal both,
-    blinkTextCursor2 800ms steps(44) 5 normal;
+  animation: typewriter2 2s steps(44, end) 1s 1 normal both,
+    blinkTextCursor2 600ms steps(44) 4 normal;
   border-right: 2px solid transparent;
-  animation-delay: 5.7s;
+  animation-delay: 3.9s;
 }
 @keyframes typewriter2 {
   from {
@@ -127,9 +127,9 @@ a {
 
 .anim-typewriter3 {
   animation: typewriter3 2s steps(44, end) 1s 1 normal both,
-    blinkTextCursor3 800ms steps(44) infinite normal;
+    blinkTextCursor3 600ms steps(44) infinite normal;
   border-right: 2px solid transparent;
-  animation-delay: 10s;
+  animation-delay: 6.3s;
 }
 @keyframes typewriter3 {
   from {

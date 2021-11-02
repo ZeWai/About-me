@@ -1,106 +1,145 @@
 body {
-  background-color: black;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   font-family: "VT323", monospace;
-}
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  border-right: 2px green dotted;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
   background-color: black;
 }
-/* The navigation menu links */
-.sidenav a {
-  padding: 20px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  color: green;
+
+.navbar {
+  background-color: black;
+}
+.navbar .container-fluid .navbar-brand {
+  color: White;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.navbar-toggler {
+  color: white;
 }
 
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 50px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-.greetings {
-  background-image: url("../Mainpage/image/background.jpg");
-  height: 100vh;
-  width: calc(100vw - 160px);
-  background-size: cover;
-  display: flex;
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  background-position: center;
   align-items: center;
   justify-content: center;
+  display: flex;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+}
+
+header .header-content {
+  position: relative;
+  width: 100%;
+  padding: 100px 15px;
   text-align: center;
 }
 
-.profile {
-  width: 700px;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 30px 0;
-  border-radius: 50px;
-  height: 500px;
+header .header-content .header-content-inner {
+  padding: 30px;
+  border: 1px white solid;
+  margin: 0 20%;
+  background-color: white;
 }
 
-.profile h1 {
-  color: white;
-  font-weight: bolder;
+header .header-content .header-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
 }
 
-.profile .info {
-  margin-top: 25px;
-  height: 350px;
+header .header-content .header-content-inner p {
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 300;
+  color: gray;
 }
 
-.profile .info ul {
-  color: white;
-  float: left;
-  justify-content: space-between;
-  list-style-type: none;
-  text-align: left;
-  width: 55%;
+@media (max-width: 768px) {
+  header {
+    height: 60vh;
+  }
+
+  header .header-content .header-content-inner {
+    padding: 30px;
+    border: 1px white solid;
+    margin: 0 20%;
+    background-color: white;
+  }
+
+  header .header-content {
+    position: absolute;
+    top: 50%;
+    padding: 0 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
+  }
+  header .header-content .header-content-inner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+  }
+
+  header .header-content .header-content-inner p {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
+    font-size: 16px;
+  }
+}
+.info {
+  margin: 10%;
+  padding: 5%;
 }
 
-li {
-  padding: 10px 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  border-radius: 10px;
-  width: 370px;
+.fade {
+  background-color: white;
+  opacity: 1;
+  transform: skew(20deg);
 }
 
-.profile .info li a {
-  color: white;
+.fade p {
+  transform: skew(-20deg);
 }
 
-aside {
-  width: 250px;
-  height: 300px;
-  margin: 15px;
-  float: right;
-  border: white 1px solid;
+.fade h5 {
+  transform: skew(-20deg);
+}
+
+section {
+  margin-bottom: 400px;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: #000;
+  height: 500vh;
+}
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  max-height: 100vh;
+  max-width: 100vw;
+  transform: translate(-50%, -50%);
 }
