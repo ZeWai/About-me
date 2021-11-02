@@ -108,17 +108,18 @@ header .header-content .header-content-inner p {
   padding: 5%;
 }
 
-.fade {
-  background-color: white;
-  opacity: 1;
+.fadein {
+  background-color: rgba(131, 130, 130, 0.527);
   transform: skew(20deg);
 }
 
-.fade p {
+.fadein p{
+  color: #000;
   transform: skew(-20deg);
 }
 
-.fade h5 {
+.fadein h5 {
+  color: #000;
   transform: skew(-20deg);
 }
 
@@ -139,7 +140,5 @@ canvas {
   position: fixed;
   left: 50%;
   top: 50%;
-  max-height: 100vh;
-  max-width: 100vw;
   transform: translate(-50%, -50%);
 }
