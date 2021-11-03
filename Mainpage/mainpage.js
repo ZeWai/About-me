@@ -1,15 +1,3 @@
-var fadings = $(".fadein");
-$(window).scroll(function() {
-  var vpheight = document.documentElement.clientHeight;
-  fadings.each(function() {
-    var r = this.getBoundingClientRect();
-    var thisHeight = $(this).height();
-    if (thisHeight + r.top < 0 || r.top > vpheight) return true;
-    var opacity = Math.max(0, Math.min(1, (r.top >= 0 ? vpheight - r.top : $(this).height() - Math.abs(r.top)) / vpheight));
-    $(this).css("opacity", opacity);
-  });
-});
-
 
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
@@ -53,3 +41,21 @@ window.addEventListener('scroll', () => {
 });
 
 preloadImages()
+
+
+topbutton = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+} 
