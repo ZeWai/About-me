@@ -5,7 +5,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 178;
 const currentFrame = index => (
-  `../Mainpage/image/sunrise ${index.toString().padStart(3, '0')}.jpg`
+  `image/sunrise ${index.toString().padStart(3, '0')}.jpg`
 )
 
 const preloadImages = () => {
